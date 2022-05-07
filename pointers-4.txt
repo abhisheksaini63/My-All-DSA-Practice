@@ -1,0 +1,21 @@
+          OUTPUT:-
+
+Enter 10 elements =1 2 3 4 5 6 7 8 9 0
+
+You Entered =1 2 3 4 5 6 7 8 9 0
+
+          PROGRAM:-
+
+#include<stdio.h>
+int main()
+{
+	int a[10],*p,i,j;
+	printf("Enter 10 elements =");
+	for(i=0;i<10;i++)
+	scanf("%d",&a[i]);
+	p=&a;
+	printf("\nYou Entered =");
+	for(j=0;j<10;j++)
+	printf("%d ",*(p+j));
+	return 0;
+}
